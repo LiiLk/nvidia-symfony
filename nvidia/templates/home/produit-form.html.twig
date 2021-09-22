@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<h1>Liste des produits</h1>
+    {{ form_start(form) }}
+    <div class="container mt-4 ">
+        <div class="row">
+            <div class="col-md-4">{{ form_row(form.nomProduit) }}</div>
+            <div class="col-md-4">{{ form_row(form.descriptionProduit) }}</div>
+            <div class="col-md-4">{{ form_row(form.prixProduit) }}</div>
+            <div class="col-md-4">{{ form_row(form.coeursNvidia) }}</div>
+            <div class="col-md-4">{{ form_row(form.frequenceBoost) }}</div>
+            <div class="col-md-4">{{ form_row(form.capaciteMem) }}</div>
+            <div class="col-md-4">{{ form_row(form.typeMem) }}</div>
+            <div class="col-md-4">{{ form_row(form.tailleIntMem) }}</div>
+            <div class="col-md-4">{{ form_row(form.resolutionNumMax) }}</div>
+            <div class="col-md-4">{{ form_row(form.longueurProduit) }}</div>
+            <div class="col-md-4">{{ form_row(form.largeurProduit) }}</div>
+        </div>
+        {{ form_widget(form) }}
+        <div class="align-content-center">
+             <button class="btn btn-primary btn-lg mt-2">Ajouter</button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}
