@@ -29,4 +29,14 @@ class HomeController extends AbstractController
 
         return $this->render('home/produitDetail.html.twig',['detailsProduit' => $produitsDetail]);
     }
+
+    /**
+     * @Route("/news/{id}", name="news")
+     */
+    public function news($id, ProduitRepository $repository)  {
+        $produitsDetail = $repository->findBy(['id' => $id]);
+
+        return $this->render('home/news.html.twig',['detailsProduit' => $produitsDetail]);
+    }
+
 }
