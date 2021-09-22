@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <table class="table table-striped">
+        <thead>
+        <th>id</th>
+        <th>nom Produit</th>
+        <th>description Produit</th>
+        <th>prix produit</th>
+        <th>coeurs nvidia</th>
+        <th>frequence boost</th>
+        <th>capacite memoire</th>
+        <th>Type memoire</th>
+        <th>Taille memoire</th>
+        <th>Resolution Numerique Max</th>
+        <th>Longueur Produit </th>
+        <th>Largeur</th>
+        </thead>
+
+        {% for produit in detailsProduit %}
+            <tbody>
+            <td>{{ produit.id }}</td>
+            <td>{{ produit.NomProduit}}</td>
+            <td>{{ produit.descriptionProduit}}</td>
+            <td>{{ produit.prixProduit}} </td>
+            <td>{{ produit.coeursNvidia}}</td>
+            <td>{{ produit.frequenceBoost}}</td>
+            <td>{{ produit.capaciteMem}}</td>
+            <td>{{ produit.typeMem}}</td>
+            <td>{{ produit.tailleIntMem}}</td>
+            <td>{{ produit.resolutionNumMax}}</td>
+            <td>{{ produit.longueurProduit}}</td>
+            <td>{{ produit.largeurProduit}}</td>
+            </tbody>
+        {% endfor %}
+
+    </table>
+{% endblock %}
