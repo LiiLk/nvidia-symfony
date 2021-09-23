@@ -37,12 +37,11 @@
                     {# <td>{{ produit.longueurProduit}}</td> #}
                     {# <td>{{ produit.largeurProduit}}</td> #}
                     <td>
-                        <a href="{{ path('details', {id: produit.id}) }}" style="color: #76FF03">detail</a>
+                        <a href="{{ path('details', {id: produit.id}) }}" class="btn btn-outline-success" style="color: #76FF03">Détails</a>
                     </td>
                     <td>
-                        <a href="{{ path('editproduit', {id: produit.id}) }}" class="btn btn-success">Editer</a>
-                        <a href="{{ path('supprimerproduit', {id: produit.id}) }}" class="btn btn-danger"
-                           style="display:inline-block">Supprimer</a>
+                        <a href="{{ path('editproduit', {id: produit.id}) }}" class="btn btn-outline-success" style="color: #76FF03" style="display:inline-block">Editer</a>
+                        <a href="{{ path('supprimerproduit', {id: produit.id}) }}" class="btn btn-outline-danger" style="color: #bd2130" style="display:inline-block">Supprimer</a>
                     </td>
                 </tr>
                 </tbody>
@@ -51,7 +50,7 @@
         </table>
 
         <div class="text-right">
-            <a href="{{ path('ajoutproduit') }}" class="btn btn-success">Créer un produit</a>
+            <a href="{{ path('ajoutproduit') }}" class="btn btn-outline-success mt-3" style="color: #76FF03">Créer un produit</a>
         </div>
     </div>
 
