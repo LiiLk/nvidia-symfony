@@ -2,25 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png"
-          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FL2Zx1un2EbZ2CkEUCY03m93ilmr_VjI9o6LmDF1BsXNgIezlxZPf2b5UMfEFtMFNMY&usqp=CAU"/>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FL2Zx1un2EbZ2CkEUCY03m93ilmr_VjI9o6LmDF1BsXNgIezlxZPf2b5UMfEFtMFNMY&usqp=CAU" />
     <title>{% block title %}NVIDIA{% endblock %}</title>
     {# Run `composer require symfony/webpack-encore-bundle`and uncomment the following Encore helpers to start using Symfony UX #}
 
     <!-- Axentix CSS minified version -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css"> -->
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
-    <link rel="stylesheet" href="{{ asset('img') }}">
-
+{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">#}
+    <script src={{ asset('style.js') }}></script>
     <style>
-        body {
+        body{
             background: #0a0a0a !important;
         }
+
+
     </style>
-    {% block stylesheets %} {# {{ encore_entry_link_tags('app') }} #} {% endblock %}
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                         <div class="container-fluid">
                             <a class="navbar-brand" href="{{ path('accueil') }}">
                                 <img src="https://images.evga.com/articles/01371/RTX_Logo.jpg"
-                                     height="100px" width="320px">
+                                     height="100px" width="310px">
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -67,8 +67,7 @@
                                 <form class="d-flex">
                                     <input class="form-control me-2 disabled" type="search" placeholder="Recherche"
                                            aria-label="Recherche">
-                                    <button class="btn btn-outline-success disabled" style="color: #76FF03"
-                                            type="submit">
+                                    <button class="btn btn-outline-success disabled" style="color: #76FF03" type="submit">
                                         Recherche
                                     </button>
                                 </form>
@@ -85,6 +84,7 @@
 </header>
 
 <main>
+    <br>
     {% block body %}{% endblock %}
     <br>
 </main>
@@ -231,13 +231,13 @@
                         <a href="{{ path('home') }}" style="color: #76FF03">Forums</a>
                     </p>
                     <p>
-                        <a href="{{ path('careers') }}" style="color: #76FF03">Careers</a>
+                        <a href="{{ path('home') }}" style="color: #76FF03">Carers</a>
                     </p>
                     <p>
-                        <a href="{{ path('privacy') }}" style="color: #76FF03">Manage My Privacy</a>
+                        <a href="{{ path('home') }}" style="color: #76FF03">Manage My Privacy</a>
                     </p>
                     <p>
-                        <a href="{{ path('mention') }}" style="color: #76FF03">Legal</a>
+                        <a href="{{ path('home') }}" style="color: #76FF03">Legal</a>
                     </p>
                 </div>
                 <!-- Grid column -->
