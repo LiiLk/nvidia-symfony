@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FL2Zx1un2EbZ2CkEUCY03m93ilmr_VjI9o6LmDF1BsXNgIezlxZPf2b5UMfEFtMFNMY&usqp=CAU" />
+    <link rel="icon" type="image/png"
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FL2Zx1un2EbZ2CkEUCY03m93ilmr_VjI9o6LmDF1BsXNgIezlxZPf2b5UMfEFtMFNMY&usqp=CAU"/>
     <title>{% block title %}NVIDIA{% endblock %}</title>
     {# Run `composer require symfony/webpack-encore-bundle`and uncomment the following Encore helpers to start using Symfony UX #}
 
@@ -12,6 +13,8 @@
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <link rel="stylesheet" href="{{ asset('img') }}">
+
     <style>
         body {
             background: #0a0a0a !important;
@@ -32,7 +35,7 @@
                         <div class="container-fluid">
                             <a class="navbar-brand" href="{{ path('accueil') }}">
                                 <img src="https://images.evga.com/articles/01371/RTX_Logo.jpg"
-                                     height="100px" width="310px">
+                                     height="100px" width="320px">
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -64,7 +67,8 @@
                                 <form class="d-flex">
                                     <input class="form-control me-2 disabled" type="search" placeholder="Recherche"
                                            aria-label="Recherche">
-                                    <button class="btn btn-outline-success disabled" style="color: #76FF03" type="submit">
+                                    <button class="btn btn-outline-success disabled" style="color: #76FF03"
+                                            type="submit">
                                         Recherche
                                     </button>
                                 </form>
@@ -81,7 +85,6 @@
 </header>
 
 <main>
-    <br>
     {% block body %}{% endblock %}
     <br>
 </main>
@@ -228,13 +231,13 @@
                         <a href="{{ path('home') }}" style="color: #76FF03">Forums</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Carers</a>
+                        <a href="{{ path('careers') }}" style="color: #76FF03">Careers</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Manage My Privacy</a>
+                        <a href="{{ path('privacy') }}" style="color: #76FF03">Manage My Privacy</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Legal</a>
+                        <a href="{{ path('mention') }}" style="color: #76FF03">Legal</a>
                     </p>
                 </div>
                 <!-- Grid column -->
