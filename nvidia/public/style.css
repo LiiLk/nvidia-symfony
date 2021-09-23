@@ -79,3 +79,6 @@
 .back-black {
     background-color: #000000 !important;
 }
+.tex {
+    vertical-align: middle;
+}
