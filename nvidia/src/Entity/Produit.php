@@ -15,7 +15,7 @@ class Produit
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $idProduit;
+    private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -25,7 +25,7 @@ class Produit
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $descriptionproduit;
+    private $descriptionProduit;
 
     /**
      * @ORM\Column(type="float")
@@ -77,18 +77,6 @@ class Produit
         return $this->id;
     }
 
-    public function getIdProduit(): ?int
-    {
-        return $this->idProduit;
-    }
-
-    public function setIdProduit(int $idProduit): self
-    {
-        $this->idProduit = $idProduit;
-
-        return $this;
-    }
-
     public function getNomProduit(): ?string
     {
         return $this->nomProduit;
@@ -101,14 +89,14 @@ class Produit
         return $this;
     }
 
-    public function getDescriptionproduit(): ?string
+    public function getDescriptionProduit(): ?string
     {
-        return $this->descriptionproduit;
+        return $this->descriptionProduit;
     }
 
-    public function setDescriptionproduit(string $descriptionproduit): self
+    public function setDescriptionProduit(string $descriptionProduit): self
     {
-        $this->descriptionproduit = $descriptionproduit;
+        $this->descriptionProduit = $descriptionProduit;
 
         return $this;
     }

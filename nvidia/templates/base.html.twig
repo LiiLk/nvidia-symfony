@@ -3,13 +3,11 @@
 <link href="theme.scss">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<div class="bg-black" style="
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==');
-      height: 100vh;
-    ">
+<link rel="stylesheet" href="home/style.css" />
 <head>
-        <div class="bg-black">
-                <div class="text-white">
+        <style type="text/css">
+                body { background: #232323 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        </style>
         <meta charset="UTF-8">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
                 <div class="container-fluid">
@@ -50,16 +48,7 @@
         </nav>
 
         <title>{% block title %}NVIDIA!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-                </div>
-        </div>
+
 </head>
 
 <body>
