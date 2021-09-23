@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    <table class="table table-black text-white">
+    <table class="table table-black text-white back-black">
         <thead>
         {# <th>id</th> #}
         <th>Carte Graphique</th>
@@ -16,6 +16,7 @@
         <th>Resolution Numerique Max</th>
         <th>Longueur</th>
         <th>Largeur</th>
+        <th>Acheter</th>
         </thead>
 
         {% for produit in detailsProduit %}
@@ -32,6 +33,10 @@
             <td>{{ produit.resolutionNumMax }}</td>
             <td>{{ produit.longueurProduit }}</td>
             <td>{{ produit.largeurProduit }}</td>
+            <td>
+                <a href="{{ path('details', {id: produit.id}) }}" class="btn btn-outline-success"
+                   style="color: #76FF03">Acheter</a>
+            </td>
             </tbody>
         {% endfor %}
 

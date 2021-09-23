@@ -75,3 +75,7 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+
+.back-black {
+    background-color: #000000 !important;
+}
