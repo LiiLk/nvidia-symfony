@@ -30,8 +30,6 @@ class HomeController extends AbstractController
 
 
     /**
-<<<<<<< HEAD
-=======
      * @Route("/accueil", name="accueil")
      */
     public function accueil()
@@ -40,7 +38,6 @@ class HomeController extends AbstractController
     }
 
     /**
->>>>>>> feature/Produit
      * @Route("/home", name="home")
      */
     public function index()
@@ -55,11 +52,12 @@ class HomeController extends AbstractController
     /**
      * @Route("/ajoutproduit", name="ajoutproduit")
      */
-    public function ajout(Request $request){
+    public function ajout(Request $request)
+    {
         $produit = new Produit();
         $form = $this->createForm(ProduitFormType::class, $produit);
         $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             $this->em->persist($produit);
             $this->em->flush();
             return $this->redirectToRoute('home');
@@ -70,13 +68,15 @@ class HomeController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
     /**
      * @Route("/editproduit/{id}", name="editproduit", methods="GET|POST")
      */
-    public function edit(Produit $produit, Request $request){
+    public function edit(Produit $produit, Request $request)
+    {
         $form = $this->createForm(ProduitFormType::class, $produit);
         $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             $this->em->flush();
             return $this->redirectToRoute('home');
         }
@@ -91,7 +91,8 @@ class HomeController extends AbstractController
      * @param Produit $produit
      * @return RedirectResponse
      */
-    public function supprimer(Produit $produit, Request $request){
+    public function supprimer(Produit $produit, Request $request)
+    {
         if ($produit) {
             $em = $this->getDoctrine()->getManager();
             $em->remove($produit);
@@ -104,19 +105,19 @@ class HomeController extends AbstractController
     /**
      * @Route("/details/{id}", name="details")
      */
-    public function details($id)  {
+    public function details($id)
+    {
         $produitsDetail = $this->repository->findBy(['id' => $id]);
 
-        return $this->render('home/produitDetail.html.twig',['detailsProduit' => $produitsDetail]);
+        return $this->render('home/produitDetail.html.twig', ['detailsProduit' => $produitsDetail]);
     }
 
     /**
-     * @Route("/news/{id}", name="news")
+     * @Route("/news", name="news")
      */
-    public function news($id)  {
-        $produitsDetail = $this->repository->findBy(['id' => $id]);
-
-        return $this->render('home/news.html.twig',['detailsProduit' => $produitsDetail]);
+    public function news()
+    {
+        return $this->render('home/news.html.twig');
     }
 
 }
