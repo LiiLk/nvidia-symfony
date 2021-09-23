@@ -26,7 +26,7 @@
 <body>
 <header>
     <nav>
-        <div class="bg-black" style="
+        <div class="bg-black div" style="
                 background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==');
                 height: 10vh;">
             <div class="bg-black">
@@ -83,10 +83,8 @@
     </nav>
 </header>
 
-<main>
-    <br>
+<main class="main">
     {% block body %}{% endblock %}
-    <br>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -97,9 +95,10 @@
 {% block javascripts %}{% endblock %}
 
 <!-- Footer -->
-<footer class="footer primary bg-black text-center text-white">
+<footer class="footer primary bg-black text-center text-white div">
     <!-- Grid container -->
     <div class="container p-4">
+        <br><br>
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
@@ -231,13 +230,13 @@
                         <a href="{{ path('home') }}" style="color: #76FF03">Forums</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Carers</a>
+                        <a href="{{ path('careers') }}" style="color: #76FF03">Careers</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Manage My Privacy</a>
+                        <a href="{{ path('privacy') }}" style="color: #76FF03">Manage My Privacy</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Legal</a>
+                        <a href="{{ path('mention') }}" style="color: #76FF03">Legal</a>
                     </p>
                 </div>
                 <!-- Grid column -->
