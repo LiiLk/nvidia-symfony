@@ -30,6 +30,8 @@ class HomeController extends AbstractController
 
 
     /**
+<<<<<<< HEAD
+=======
      * @Route("/accueil", name="accueil")
      */
     public function accueil()
@@ -38,6 +40,7 @@ class HomeController extends AbstractController
     }
 
     /**
+>>>>>>> feature/Produit
      * @Route("/home", name="home")
      */
     public function index()

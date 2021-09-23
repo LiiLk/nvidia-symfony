@@ -1,12 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<<<<<<< HEAD
+    <div class="container mt-4">
+    <table class="table text-white">
+        <thead>
+        <th scope="col">id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Prix</th>
+=======
     <table class="table table-black text-white">
         <thead>
         {#<th>id</th>#}
         <th>Carte Graphique</th>
         <th>Description</th>
         <th>Prix</th>
+>>>>>>> feature/Produit
 {#        <th>Coeurs nvidia</th>#}
 {#        <th>Frequence boost</th>#}
 {#        <th>Capacite memoire</th>#}
@@ -15,12 +25,38 @@
 {#        <th>Resolution Numerique Max</th>#}
 {#        <th>Longueur</th>#}
 {#        <th>Largeur</th>#}
+<<<<<<< HEAD
+        <th scope="col">Actions</th>
+=======
         <th>Details</th>
+>>>>>>> feature/Produit
         </thead>
 
         {% for produit in produits %}
 
             <tbody>
+<<<<<<< HEAD
+            <tr>
+                <td>{{ produit.id }}</td>
+                <td>{{ produit.NomProduit}}</td>
+                <td>{{ produit.descriptionProduit}}</td>
+                <td>{{ produit.prixProduit}} €</td>
+                {#            <td>{{ produit.coeursNvidia}}</td>#}
+                {#            <td>{{ produit.frequenceBoost}}</td>#}
+                {#            <td>{{ produit.capaciteMem}}</td>#}
+                {#            <td>{{ produit.typeMem}}</td>#}
+                {#            <td>{{ produit.tailleIntMem}}</td>#}
+                {#            <td>{{ produit.resolutionNumMax}}</td>#}
+                {#            <td>{{ produit.longueurProduit}}</td>#}
+                {#            <td>{{ produit.largeurProduit}}</td>#}
+                <td><a href="{{ path('details', {id: produit.id}) }}">detail</a>
+                <a href="{{ path('editproduit', {id: produit.id})}}" class="btn btn-success">Editer</a>
+                <a href="{{ path('supprimerproduit', {id: produit.id}) }}" class="btn btn-danger" style="display:inline-block">Supprimer</a>
+                </td>
+            </tr>
+
+
+=======
             {#<td>{{ produit.id }}</td>#}
             <td>{{ produit.NomProduit}}</td>
             <td>{{ produit.descriptionProduit}}</td>
@@ -34,8 +70,17 @@
 {#            <td>{{ produit.longueurProduit}}</td>#}
 {#            <td>{{ produit.largeurProduit}}</td>#}
             <td><a href="{{ path('details', {id: produit.id}) }}" style="color: #76FF03">detail</a></td>
+>>>>>>> feature/Produit
             </tbody>
         {% endfor %}
 
     </table>
+<<<<<<< HEAD
+
+    <div class="text-right">
+        <a href="{{ path('ajoutproduit')}}" class="btn btn-success">Créer un produit</a>
+    </div>
+    </div>
+=======
+>>>>>>> feature/Produit
 {% endblock %}

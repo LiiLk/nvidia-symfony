@@ -3,8 +3,13 @@
 
     <table class="table table-black text-white">
         <thead>
+<<<<<<< HEAD
+        <th>id</th>
+        <th>Nom</th>
+=======
         {# <th>id</th>#}
         <th>Carte Graphique</th>
+>>>>>>> feature/Produit
         <th>Description</th>
         <th>Prix</th>
         {#        <th>Coeurs nvidia</th>#}
@@ -20,7 +25,11 @@
 
         {% for produit in news %}
             <tbody>
+<<<<<<< HEAD
+            <td>{{ produit.id }}</td>
+=======
             {#<td>{{ produit.id }}</td>#}
+>>>>>>> feature/Produit
             <td>{{ produit.NomProduit}}</td>
             <td>{{ produit.descriptionProduit}}</td>
             <td>{{ produit.prixProduit}} </td>
@@ -32,7 +41,11 @@
             {#            <td>{{ produit.resolutionNumMax}}</td>#}
             {#            <td>{{ produit.longueurProduit}}</td>#}
             {#            <td>{{ produit.largeurProduit}}</td>#}
+<<<<<<< HEAD
+            <td><a href="{{ path('news', {id: produit.id}) }}">detail</a></td>
+=======
             <td><a href="{{ path('news', {id: produit.id}) }}" style="color: #76FF03">detail</a></td>
+>>>>>>> feature/Produit
             </tbody>
         {% endfor %}
 

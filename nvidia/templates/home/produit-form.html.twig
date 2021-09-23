@@ -1,0 +1,47 @@
+{% block body %}
+    {{ form_start(form) }}
+    <div class="container mt-4 ">
+        {{ form_start(form) }}
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.nomProduit) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.descriptionProduit) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.prixProduit) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.coeursNvidia) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.frequenceBoost) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.capaciteMem) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.typeMem) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.tailleIntMem) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.resolutionNumMax) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.longueurProduit) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">{{ form_row(form.largeurProduit) }}</div>
+        </div>
+        {{ form_widget(form) }}
+        <div class="row justify-content-center">
+            <div class="col-md-4"><button class="btn btn-success mt-3">{{ button|default('Créer') }}</button></div>
+        </div>
+
+
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}
