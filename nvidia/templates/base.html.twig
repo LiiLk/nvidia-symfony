@@ -8,24 +8,24 @@
 
     <!-- Axentix CSS minified version -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.3/dist/css/axentix.min.css"> -->
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
+{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">#}
+    <script src={{ asset('style.js') }}></script>
     <style>
-        body {
+        body{
             background: #0a0a0a !important;
         }
+
+
     </style>
-    {% block stylesheets %} {# {{ encore_entry_link_tags('app') }} #} {% endblock %}
 </head>
 
 <body>
 <header>
-    <nav>
-        <div class="bg-black" style="
-                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==');
-                height: 10vh;">
+    <nav class="div">
             <div class="bg-black">
                 <div class="text-white">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -80,10 +80,8 @@
     </nav>
 </header>
 
-<main>
-    <br>
+<main class="main">
     {% block body %}{% endblock %}
-    <br>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -94,9 +92,10 @@
 {% block javascripts %}{% endblock %}
 
 <!-- Footer -->
-<footer class="footer primary bg-black text-center text-white">
+<footer class="footer primary bg-black text-center text-white div">
     <!-- Grid container -->
     <div class="container p-4">
+        <br><br>
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
@@ -228,13 +227,13 @@
                         <a href="{{ path('home') }}" style="color: #76FF03">Forums</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Carers</a>
+                        <a href="{{ path('careers') }}" style="color: #76FF03">Careers</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Manage My Privacy</a>
+                        <a href="{{ path('privacy') }}" style="color: #76FF03">Manage My Privacy</a>
                     </p>
                     <p>
-                        <a href="{{ path('home') }}" style="color: #76FF03">Legal</a>
+                        <a href="{{ path('mention') }}" style="color: #76FF03">Legal</a>
                     </p>
                 </div>
                 <!-- Grid column -->

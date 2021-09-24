@@ -1,12 +1,16 @@
-.body{
-    background: #0a0a0a;
-    background-color: #0a0a0a;
+.body {
+    font-family: GeForce, Helvetica, Arial, sans-serif !important;
+    background-color: #000000 !important;
 }
 
+.main {
+    font-family: GeForce, Helvetica, Arial, sans-serif !important;
+    background-color: #000000 !important;
+}
 
 .a {
     color: #76B900;
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .success {
@@ -91,4 +95,76 @@ fondation-bandeau{
 
 fondation-img{
     background-image: url("https://s22.q4cdn.com/364334381/files/design/slider/slider01.jpg");
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.div {
+    font-family: GeForce, Helvetica, Arial, sans-serif !important;
+}
+
+.jumbotron {
+    color: white !important;
+    background: linear-gradient(to left, black, transparent) !important;
+    background-origin: padding-box !important;
+    background-attachment: scroll !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-hero-background-image-spec2-bb770_550-p.jpg") no-repeat 0 50% !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    height: 100vh !important;
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-weight: bold !important;
+    border-bottom: 0px solid rgb(52, 51, 51) !important;
+}
+
+.container {
+    font-family: GeForce, Helvetica, Arial, sans-serif;
+}
+
+.careers {
+    font-family: GeForce, Helvetica, Arial, sans-serif;
+    color: black;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://www.nvidia.com/content/dam/en-zz/Solutions/careers/nvidia-career-home-hero-desktop-2560x580@2x.jpg") no-repeat 0 50%;
+    background-size: contain;
+    height: 44.5vh;
+    font-weight: bold !important;
+    border-bottom: 0px solid rgb(52, 51, 51);
+}
+
+.hero-text {
+    background: linear-gradient(to right, black 50%, transparent 90%);
+    margin-top: 6% !important;
+    left: 35% !important;
+    height: 100% !important;
+    width: 1000px !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white;
+}
+
+.hero-text h1 {
+    margin-top: 50%;
+}
+
+.hero-text p {
+    margin-bottom: 50%;
+}
+
+.back-black {
+    background-color: #000000 !important;
+}
+
+.tex {
+    vertical-align: middle;
+}
+
+.onverra {
+    margin-top: 5%;
 }
