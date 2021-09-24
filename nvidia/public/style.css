@@ -8,6 +8,23 @@
     background-color: #000000 !important;
 }
 
+.home-prod {
+    height: 200px;
+    width: 1003px;
+}
+
+.home-img {
+    background-image: url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-broadcasting-1350x580-l@2x.jpg");
+    background-position: right !important;
+    height: 80%;
+    color: white;
+    text-align: left;
+    padding: 80px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    border-bottom: 0px solid rgb(52, 51, 51) !important;
+}
+
 .a {
     color: #76B900;
     text-decoration: none;
@@ -21,48 +38,51 @@
     color: #76FF03
 }
 
-.techno{
+.techno {
     background-color: white;
     padding: 15px;
 }
-.techno h1{
+
+.techno h1 {
     color: #76B900;
     margin-top: 100px;
     text-transform: uppercase;
 }
 
-.techno h2{
+.techno h2 {
     color: #76B900;
     display: inline;
     font-size: 15px;
 }
 
-.techno h3{
+.techno h3 {
     color: #76B900;
 }
 
-.techno p{
+.techno p {
     text-align: left;
     text-justify: auto;
 }
+
 .investor {
     height: 850px;
-    width: 1262px;
+    width: 1903px;
 }
-.investor h1{
+
+.investor h1 {
     color: #76B900;
     margin-top: 100px;
     text-transform: uppercase;
     text-align: right;
 }
 
-.investor-img{
+.investor-img {
     background-image: url("https://s22.q4cdn.com/364334381/files/design/slider/slider01.jpg");
     height: 50%;
     color: white;
     background-repeat: no-repeat;
     text-align: right;
-    padding : 15px;
+    padding: 15px;
 }
 
 .investor-white {
@@ -72,11 +92,11 @@
     padding: 15px;
 }
 
-.investor-white h1{
+.investor-white h1 {
     text-align: left;
 }
 
-.investor-white p{
+.investor-white p {
     text-align: left;
 }
 
@@ -84,18 +104,21 @@
     height: 850px;
     width: 1262px;
 }
-fondation-bandeau{
+
+fondation-bandeau {
     height: 50%;
     width: 100%;
 }
-.titre{
+
+.titre {
     float: left;
     width: 50%;
 }
 
-fondation-img{
+fondation-img {
     background-image: url("https://s22.q4cdn.com/364334381/files/design/slider/slider01.jpg");
 }
+
 .navbar {
     margin-bottom: 0px;
 }
