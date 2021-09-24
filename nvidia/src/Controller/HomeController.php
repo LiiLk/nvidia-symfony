@@ -120,4 +120,28 @@ class HomeController extends AbstractController
         return $this->render('home/news.html.twig');
     }
 
+    /**
+     * @Route("/technologie", name="technologie")
+     */
+    public function techno()
+    {
+        return $this->render('home/technologie.html.twig');
+    }
+
+    /**
+     * @Route("/investor", name="investor")
+     */
+    public function investor()
+    {
+        return $this->render('home/investor.html.twig');
+    }
+
+    /**
+     * @Route("/fondation", name="fondation")
+     */
+    public function fondation()
+    {
+        return $this->render('home/foundation.html.twig');
+    }
+
 }

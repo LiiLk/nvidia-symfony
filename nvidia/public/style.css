@@ -1,0 +1,94 @@
+.body{
+    background: #0a0a0a;
+    background-color: #0a0a0a;
+}
+
+
+.a {
+    color: #76B900;
+    text-decoration-line: none;
+}
+
+.success {
+    color: #76B900;
+}
+
+.button {
+    color: #76FF03
+}
+
+.techno{
+    background-color: white;
+    padding: 15px;
+}
+.techno h1{
+    color: #76B900;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.techno h2{
+    color: #76B900;
+    display: inline;
+    font-size: 15px;
+}
+
+.techno h3{
+    color: #76B900;
+}
+
+.techno p{
+    text-align: left;
+    text-justify: auto;
+}
+.investor {
+    height: 850px;
+    width: 1262px;
+}
+.investor h1{
+    color: #76B900;
+    margin-top: 100px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.investor-img{
+    background-image: url("https://s22.q4cdn.com/364334381/files/design/slider/slider01.jpg");
+    height: 50%;
+    color: white;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding : 15px;
+}
+
+.investor-white {
+    background-color: white;
+    height: 50%;
+    color: black;
+    padding: 15px;
+}
+
+.investor-white h1{
+    text-align: left;
+}
+
+.investor-white p{
+    text-align: left;
+}
+
+.fondation {
+    height: 850px;
+    width: 1262px;
+}
+fondation-bandeau{
+    height: 50%;
+    width: 100%;
+}
+.titre{
+    float: left;
+    width: 50%;
+}
+
+fondation-img{
+    background-image: url("https://s22.q4cdn.com/364334381/files/design/slider/slider01.jpg");
+}
